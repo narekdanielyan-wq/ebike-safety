@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="none" stroke="url(#g)" stroke-width="4"/>
+  <text x="50" y="40" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#06b6d4">E-BIKE</text>
+  <text x="50" y="58" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700" font-size="12" fill="#22d3ee">SAFETY</text>
+  <text x="50" y="74" text-anchor="middle" font-family="Inter,sans-serif" font-weight="900" font-size="16" fill="#ffffff">13+</text>
+</svg>
