@@ -1,9 +1,12 @@
 {
   "name": "ebike-safety-13",
   "private": true,
+  "homepage": "https://narekdanielyan-wq.github.io/ebike-safety/",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -14,9 +17,10 @@
     "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.5.2",
-    "vite": "^6.3.5",
     "@tailwindcss/vite": "^4.1.8",
-    "tailwindcss": "^4.1.8"
+    "@vitejs/plugin-react": "^4.5.2",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4.1.8",
+    "vite": "^6.3.5"
   }
 }
