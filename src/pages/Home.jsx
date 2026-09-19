@@ -1,6 +1,7 @@
 import Button from '../components/Button'
 import Card from '../components/Card'
 import SectionHeader from '../components/SectionHeader'
+import AdBanner from '../components/AdBanner'
 
 const features = [
   {
@@ -23,33 +24,7 @@ const features = [
   },
 ]
 
-const reasons = [
-  {
-    icon: '📚',
-    title: 'Learn E-Bike Safety',
-    description: 'Explore comprehensive guides on safe riding practices, equipment checks, and traffic awareness.',
-  },
-  {
-    icon: '🧪',
-    title: 'Test Your Knowledge',
-    description: 'Take our interactive quiz to see how well you understand e-bike safety fundamentals.',
-  },
-  {
-    icon: '🎮',
-    title: 'Understand E-Bike Controls',
-    description: 'Learn what makes an e-bike different from a regular bicycle — motors, batteries, throttles, and more.',
-  },
-  {
-    icon: '📋',
-    title: 'Safety Recommendations',
-    description: 'Find useful, evidence-informed safety recommendations for riders of all experience levels.',
-  },
-  {
-    icon: '❓',
-    title: 'Parent Discussion Guide',
-    description: 'Discover what questions parents should consider before allowing their child to ride an e-bike.',
-  },
-]
+
 
 export default function Home() {
   return (
@@ -135,22 +110,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why People Visit */}
-      <section id="why-visit" className="py-20 lg:py-28 bg-dark-800/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Advertisement Section */}
+      <section id="advertisement" className="py-20 lg:py-28 bg-dark-800/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeader
-            badge="Why People Visit"
-            title="What You'll Discover Here"
-            subtitle="Whether you're a young rider, parent, or just curious — this site has resources for you."
+            badge="Supported By"
+            title="Advertisement"
           />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
-            {reasons.map((r) => (
-              <div key={r.title} className="animate-slide-up">
-                <Card icon={r.icon} title={r.title} variant="solid">
-                  {r.description}
-                </Card>
-              </div>
-            ))}
+          <div className="flex justify-center w-full overflow-hidden">
+            <div className="w-full max-w-[728px] min-h-[90px] bg-dark-900/50 rounded-2xl flex items-center justify-center p-4 border border-dark-600/50 relative overflow-hidden">
+              <AdBanner 
+                dataAdSlot="8915589066" 
+                dataAdFormat="autorelaxed"
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
       </section>
