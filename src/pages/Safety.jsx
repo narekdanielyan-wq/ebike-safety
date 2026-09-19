@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import AdBanner from '../components/AdBanner'
 import SectionHeader from '../components/SectionHeader'
 import Card from '../components/Card'
 import Button from '../components/Button'
@@ -174,7 +175,7 @@ export default function Safety() {
         </div>
 
         {/* Quick Check Button */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <Button
             onClick={allChecked ? uncheckAll : checkAll}
             variant={allChecked ? 'secondary' : 'accent'}
@@ -183,6 +184,15 @@ export default function Safety() {
           >
             {allChecked ? '↩️  Reset Checklist' : '⚡  Quick Safety Check — Mark All Complete'}
           </Button>
+        </div>
+
+        {/* Advertisement */}
+        <div className="my-16 flex justify-center w-full overflow-hidden">
+          <div className="w-full max-w-[728px] min-h-[90px] bg-dark-800/30 rounded-2xl flex items-center justify-center p-2 border border-dark-600/50 relative overflow-hidden">
+             {/* Small label so it looks nice before the ad loads */}
+            <span className="text-dark-300 text-xs absolute top-2 right-3 font-medium tracking-wider uppercase">Advertisement</span>
+            <AdBanner className="w-full" />
+          </div>
         </div>
 
         {/* Safety Gear */}
